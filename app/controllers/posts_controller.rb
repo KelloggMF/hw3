@@ -7,7 +7,7 @@ class PostsController < ApplicationController
 
   def new
     @post = Post.new
-    @post["posted_at"] = Date.today
+    @post["posted_on"] = Date.today
     @post["place_id"] = params["place_id"]
   end
 
